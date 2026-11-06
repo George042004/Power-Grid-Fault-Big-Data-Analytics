@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  powergrid-analytics:
+    build: .
+    container_name: powergrid_analytics_app
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    environment:
+      - STREAMING_MODE=local
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - DASHBOARD_PORT=8501
+    volumes:
+      - ./data:/app/data
+      - ./machine_learning/models:/app/machine_learning/models
+    restart: unless-stopped

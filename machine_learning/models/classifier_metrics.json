@@ -1,0 +1,161 @@
+{
+    "model_type": "RandomForestClassifier",
+    "hyperparameters": {
+        "n_estimators": 120,
+        "max_depth": 15,
+        "random_state": 42
+    },
+    "training_samples": 5600,
+    "testing_samples": 1400,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "classes": [
+        "Frequency Anomaly",
+        "Normal",
+        "Overheating",
+        "Overload",
+        "Short Circuit",
+        "Voltage Sag",
+        "Voltage Swell"
+    ],
+    "confusion_matrix": [
+        [
+            200,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            200,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            200,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            200,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            200,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            200,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            200
+        ]
+    ],
+    "classification_report": {
+        "Frequency Anomaly": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Normal": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Overheating": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Overload": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Short Circuit": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Voltage Sag": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "Voltage Swell": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 200.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1400.0
+        },
+        "weighted avg": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1400.0
+        }
+    },
+    "feature_importances": {
+        "voltage_deviation_pu": 0.1517,
+        "temperature_c": 0.1331,
+        "voltage_kv": 0.1321,
+        "frequency_deviation_hz": 0.1229,
+        "current_a": 0.096,
+        "load_pct": 0.0914,
+        "impedance_estimate_ohm": 0.0879,
+        "power_factor": 0.0775,
+        "frequency_hz": 0.0384,
+        "reactive_power_kvar": 0.021,
+        "breaker_is_tripped": 0.0183,
+        "apparent_power_kva": 0.0157,
+        "active_power_kw": 0.014
+    },
+    "trained_at": "2026-11-04T13:59:16.298071"
+}
